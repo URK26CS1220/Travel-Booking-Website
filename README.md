@@ -1,114 +1,49 @@
-1. Project Description
+# CampusConnect – Web Technology IA-3 Working Model
 
-The Travel Booking Website is a user-friendly web application developed to make travel planning easier and more convenient. It allows users to explore different tourist destinations, view travel packages, check prices and submit their booking details online.
+A multi-page, responsive student portal demo created to cover the functional requirements in the supplied IA-3 checklist.
 
-The website provides an attractive design and simple navigation to improve the user experience.
+## Run the website
+1. Extract `CampusConnect_Web_Technology_IA3.zip`.
+2. Open the folder in VS Code.
+3. Open `index.html` in a browser, or use the VS Code Live Server extension.
+4. Go to **Register**, complete all fields with valid values, and create an account.
+5. Sign in with the same email and password to open the dashboard.
 
-2. Objectives
+## Pages and modules
+- `index.html` – landing page, navigation, hero, feature cards and CTA.
+- `register.html` – full registration form.
+- `signup.html` – email/password sign-up and Terms checkbox.
+- `signin.html` – login form with show/hide password and invalid-credential alert.
+- `home.html` – authenticated demo dashboard, responsive layouts, task checklist and calculator.
+- `styles.css`, `layout.css` – design tokens, light/dark themes, responsive CSS Grid/Flexbox.
+- `validation.js` – checklist Regex validation on blur and submit.
+- `theme.js` – persistent theme toggle using localStorage.
+- `calculator.js` – calculator keys, result display and division-by-zero handling.
+- `chatbot.js` – floating chatbot with keyword replies and auto-scroll.
+- `app.js` – navigation, sign-up/sign-in demo interactions and dashboard data.
 
-To develop an attractive and user-friendly travel website.
+## Functional requirements mapping
+| Checklist item | Included implementation |
+|---|---|
+| FR-01 Landing page | Header, brand, nav links, theme toggle, hero CTA, feature cards |
+| FR-02 Registration | Full Name, Register ID, Email, Mobile, Division, Password, Confirm Password; regex validation; inline errors; disabled submit |
+| FR-03 Sign-up | Email/password and Terms checkbox |
+| FR-04 Sign-in | Login, show/hide password, invalid credential alert |
+| FR-05 Dashboard | Desktop 3-column CSS Grid; mobile stacked Flexbox; hamburger navigation |
+| FR-06 Chatbot | Fixed FAB, expandable panel, user/bot nodes, keyword replies, auto-scroll |
+| FR-07 Theme | CSS variables, instant toggle, localStorage persistence |
+| FR-08 Calculator | Digits, operators, C, =, display and divide-by-zero handling |
 
-To display different tourist destinations.
+## Important demo limitations
+- This is a front-end academic working model. Account information is stored in browser `localStorage`; it is not a secure production authentication system and must not be used for real personal data.
+- GitHub repository creation and Vercel deployment require your own accounts and explicit publishing steps. No live hosting URL is created by this ZIP.
+- Replace the sample project title, student details, division list and dashboard sample statistics with your actual project information before submission.
+- The IA-3 checklist also requires a 20+ page e-report, screenshots, QR codes, GitHub/Vercel proof and a five-minute presentation video. These are separate submission tasks and are not automatically produced by this website source.
 
-To provide information about travel packages and prices.
-
-To allow users to submit travel booking details.
-
-To provide an easy and convenient travel planning experience.
-
-3. Technologies Used
-
-HTML5: Used to create the structure of the website.
-
-CSS3: Used for styling, colours, layouts and responsive design.
-
-JavaScript: Used to add interactive features and form validation.
-
-4. Website Features
-
-Home page with an attractive design.
-
-About Us section.
-
-Popular tourist destinations.
-
-Travel packages and price details.
-
-Destination image gallery.
-
-Online booking form.
-
-Special offers and discounts.
-
-Contact information.
-
-User-friendly navigation.
-
-5. Project Structure
-
-Travel-Booking-Website/
-│
-├── index.html
-├── style.css
-├── script.js
-│
-└── images/
-    ├── destination1.jpg
-    ├── destination2.jpg
-    └── destination3.jpg
-
-6. How to Run the Project
-
-Download or copy the project files.
-
-Save all files in one folder.
-
-Open the project folder in Visual Studio Code.
-
-Make sure the HTML, CSS, JavaScript and image files are properly linked.
-
-Open index.html in Google Chrome or any web browser.
-
-Explore the website and test its features.
-
-7. Applications
-
-Helps users explore tourist destinations.
-
-Provides travel package information.
-
-Makes travel planning easier.
-
-Provides an online booking interface.
-
-8. Future Enhancements
-
-Online payment integration.
-
-User registration and login.
-
-Real-time hotel and flight availability.
-
-Booking history.
-
-Google Maps integration.
-
-Database connectivity.
-
-9. Conclusion
-
-The Travel Booking Website provides a simple and attractive platform for exploring travel destinations and submitting booking details. This project demonstrates the practical application of HTML, CSS and JavaScript in web development. It also helps improve technical knowledge and website development skills.
-
-10. Project Details
-
-Project Title: Travel Booking Website
-
-Student Name: KEREN R
-
-Register Number: URK26CS1220
-
-Course: Web Technology
-
-Course Code: 25CS208
-
-Academic Year: 2026–2030
+## Suggested valid registration example
+- Full Name: Asha Kumar
+- Register ID: 25CS208
+- Email: asha@example.com
+- Mobile: 9876543210
+- Division: Computer Science & Engineering
+- Password: Campus@123

@@ -1,0 +1,7 @@
+/* Layout-specific rules: hero and feature areas use Grid; small-screen navigation uses Flexbox. */
+.hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr)}
+.feature-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.dashboard-shell{display:grid;grid-template-columns:250px minmax(0,1fr) 300px}
+.dashboard-grid{display:grid;grid-template-columns:1fr 1fr}
+@media(max-width:1100px){.dashboard-shell{grid-template-columns:210px minmax(0,1fr)}.dash-right{grid-column:2}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:767px){.hero{display:flex;flex-direction:column;align-items:stretch}.feature-grid{display:flex;flex-direction:column}.dashboard-shell{display:flex;flex-direction:column}.dashboard-grid{display:flex;flex-direction:column}.main-nav.open{display:flex;flex-direction:column}}
